@@ -13,7 +13,7 @@ Built in a single day (22 August 2020, four commits) as a learning exercise duri
 - `db/seeds.rb` creates 5 fake products with Faker.
 - Tests: fixtures for products and a user, plus a system test file (`test/system/products_test.rb`) with two Capybara tests, run with headless Chrome.
 
-The create flow is unfinished. In `ProductsController` the strong-parameters method is misspelled (`product_paramas` / `permite`), so creating a product raises an error, and the second system test has typos of its own. Products have no votes, comments or user ownership yet.
+The create flow is unfinished. In `ProductsController` the strong-parameters method is misspelled (`product_paramas` / `permite`), so creating a product raises an error. Neither system test passes as committed: the index test looks for a `.product` selector that the view does not render (it uses `.card-product`), and the create test has typos (`whith:`, `asset_text`, `/Products/new`). Products have no votes, comments or user ownership yet.
 
 ## Stack
 
